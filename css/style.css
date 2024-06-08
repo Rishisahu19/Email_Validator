@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'Noto Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 19px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover {
+    color: rgb(81, 54, 201);
+}
+
+main {
+    min-height: 86vh;
+}
+
+.logo img {
+    width: 15px;
+    filter: invert(1);
+}
+
+.container {
+    background-color: azure;
+    max-width: 80vw;
+    margin: auto;
+    padding: 15px;
+}
+
+.container h1 {
+    padding: 12px 0;
+}
+
+input[type='text'] {
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont {
+    text-transform: capitalize;
+}
+
+footer {
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        font-size: 12px;
+    }
+
+    input[type='text'] {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+
+    .logo span {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 15px;
+        filter: invert(1);
+    }
+}
